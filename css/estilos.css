@@ -43,6 +43,9 @@ body{
     transition-timing-function: ease-in-out;
 }
 
+.rojo-gremio{
+    color: #cc0d0d;
+}
 
 /* header de paginas */
 header{
@@ -51,7 +54,6 @@ header{
 
 h1{
     text-align: center;
-    color: rgb(204, 13, 13);
     font-size: 30px;
 }
 
@@ -63,8 +65,7 @@ h2{
     margin: 10px 0 50px 0 ;
 }
 
-.texto-rojo{
-    color: rgb(204, 13, 13);
+.h2-grande{
     font-size: 17px;
 }
 
@@ -82,7 +83,6 @@ h2{
 
 .letra-inicial{
     font-size: 50px;
-    color: rgb(204, 13, 13);
     grid-area: letra-inicial;
 }
 
@@ -112,7 +112,6 @@ main{
 }
 
 #int-selec span{
-    color:rgb(204, 13, 13);
     font-size: 28px;
 }
 
@@ -298,10 +297,6 @@ footer ul li{
 @media screen and (min-width: 768px){
 
 
-    /* En Navegador */
-
-    
-
     /* En pagina carta - Main */
 
     .lista-carta{
@@ -357,7 +352,7 @@ footer ul li{
         font-size: 25px;
     }
 
-    .texto-rojo{
+    .h2-grande{
         font-size: 28px;
     }
 
