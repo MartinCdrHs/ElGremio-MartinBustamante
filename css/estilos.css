@@ -1,0 +1,444 @@
+/* Estilos de todas las paginas */
+
+body{
+    font-family: 'Uncial Antiqua', cursive;
+    background-color: #000000;
+    margin: 0
+}
+
+/* Estilos de Navegador */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232222f5;
+    padding-top: 15px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 5px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+nav ul li{
+    padding: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(204, 13, 13);
+    font-weight: bold;
+    font-size: 18px;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* header de paginas */
+header{
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(204, 13, 13);
+    font-size: 30px;
+}
+
+h2{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0 50px 0 ;
+}
+
+.texto-rojo{
+    color: rgb(204, 13, 13);
+    font-size: 17px;
+}
+
+/* Grid para H2 */
+
+.grid-primera-letra{
+    text-align: justify;
+    display: grid;
+    grid-template-areas:
+    "letra-inicial fraccion"
+    "resto-parrafo resto-parrafo" ;
+    grid-template-columns: 50px auto;
+    align-items: center;
+}
+
+.letra-inicial{
+    font-size: 50px;
+    color: rgb(204, 13, 13);
+    grid-area: letra-inicial;
+}
+
+.fraccion{
+    grid-area: fraccion;
+}
+
+.resto-parrafo{
+    grid-area: resto-parrafo;
+}
+
+/* Main de paginas*/
+
+main{
+    padding: 15px;
+}
+
+/* Main Pagina Principal */
+
+#int-selec{
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+    text-align: center;
+    margin: 0;
+
+}
+
+#int-selec span{
+    color:rgb(204, 13, 13);
+    font-size: 28px;
+}
+
+.selec{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.selec-div{
+padding: 15px;
+}
+
+.selec-div img{
+    width: 90%;
+}
+
+
+#comunicado-titulo{
+    color:rgb(204, 13, 13);
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* Main Carta */
+
+.titulo-carta{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.lista-carta{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas:
+    "item1 precio1"
+    "item2 precio2"
+    "item3 precio3"
+    "item4 precio4"
+    "item5 precio5"
+    "item6 precio6"
+    "item7 precio7"
+    "item8 precio8"
+    "item9 precio9"
+    "item10 precio10"
+    "item11 precio11"
+    "item12 precio12";
+}
+
+#item1{grid-area: item1; padding: 5px;}
+#item2{grid-area: item2; padding: 5px;}
+#item3{grid-area: item3; padding: 5px;}
+#item4{grid-area: item4; padding: 5px;}
+#item5{grid-area: item5; padding: 5px;}
+#item6{grid-area: item6; padding: 5px;}
+#item7{grid-area: item7; padding: 5px;}
+#item8{grid-area: item8; padding: 5px;}
+#item9{grid-area: item9; padding: 5px;}
+#item10{grid-area: item10; padding: 5px;}
+#item11{grid-area: item11; padding: 5px;}
+#item12{grid-area: item12; padding: 5px;}
+
+#precio1{grid-area: precio1; text-align: right; padding: 5px;}
+#precio2{grid-area: precio2; text-align: right; padding: 5px;}
+#precio3{grid-area: precio3; text-align: right; padding: 5px;}
+#precio4{grid-area: precio4; text-align: right; padding: 5px;}
+#precio5{grid-area: precio5; text-align: right; padding: 5px;}
+#precio6{grid-area: precio6; text-align: right; padding: 5px;}
+#precio7{grid-area: precio7; text-align: right; padding: 5px;}
+#precio8{grid-area: precio8; text-align: right; padding: 5px;}
+#precio9{grid-area: precio9; text-align: right; padding: 5px;}
+#precio10{grid-area: precio10; text-align: right; padding: 5px;}
+#precio11{grid-area: precio11; text-align: right; padding: 5px;}
+#precio12{grid-area: precio12; text-align: right; padding: 5px;}
+
+/* Main Como Llego */
+
+#div-mapa{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "mapa"
+    "dir-mapa";
+}
+
+#mapa{
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+
+}
+
+#dir-mapa{
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Main Juegos */
+
+.lista-juegos{
+   display: grid;
+   align-items: center;
+   justify-items: center;
+   grid-gap: 30px;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.lista-juegos div{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.lista-juegos div img{
+    width: 100%; height: 90%;
+}
+
+/* Main reservas */
+.formulario{
+width: 80%;
+background-color: #8f8f8f;
+padding: 30px 15px;
+margin:auto;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.campo{
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.formulario textarea{
+    height: 100px;
+}
+
+.boton{
+    width: 30%;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 40px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    color: white;
+    display: inline-block;
+    padding: 3px;
+}
+
+/* Adaptaciones a tamaños de pantalla */
+
+@media screen and (min-width: 768px){
+
+
+    /* En Navegador */
+
+    body{
+        padding-top: 115px;
+    }
+
+    nav{
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        padding: 15px;
+        position: fixed;
+        width: 98%;
+        top: 0;
+        left: 0;
+    }
+
+    nav ul{
+        padding: 15px ;
+        margin: 0;
+        }
+
+    nav ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+
+    /* En pagina carta - Main */
+
+    .lista-carta{
+        width: 80%;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    .titulo-carta{
+        font-size: 30px;
+    }
+
+    /* En Footer */
+
+    footer{
+        padding: 20px 10px;
+        justify-content: right;
+    }
+
+    footer ul li{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* En nav */
+
+    nav ul li:hover{
+        transform: scale(1.2);
+        transition-duration: 0.5s;
+        text-decoration: underline;
+        border-style: solid;
+        border-width: 1.5px;
+        border-radius: 3px;
+        border-color: rgb(204, 13, 13)
+    }
+
+
+    /* En pagina principal - Main */
+
+    h1{
+        font-size: 45px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .texto-rojo{
+        font-size: 28px;
+    }
+
+    #int-selec{
+        font-size: 38px;
+    }
+
+    #int-selec span{
+        font-size: 40px;
+    }
+
+    .selec-div:hover{
+        background-color: #8f8f8f;
+        border-radius: 8px;
+        color: #000000;
+    }
+
+    .selec{
+        font-size: 20px;
+    }
+
+    #comunicado-titulo{
+        font-size: 35px;
+    }
+
+    .grid-primera-letra{
+        display: grid;
+        grid-template-areas:
+        "letra-inicial fraccion"
+        "resto-parrafo resto-parrafo" ;
+        grid-template-columns: 65px auto;
+        align-items: center;
+    }
+
+    .letra-inicial{
+        font-size: 65px;
+    }
+
+    /* En pagina como llego - Main */
+
+    #mapa{
+        width: 90%;
+        height: 600px;
+        padding: 15px;
+    }
+
+    #dir-mapa{
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    /* En pagina reservas */
+    .formulario{
+        width: 530px;
+    }
+
+    .campo{
+        font-weight: bolder;
+        color: #000000;
+    }
+
+    .formulario textarea{
+        font-weight: bolder;
+    }
+
+    .boton:hover{
+        background-color: #000000;
+        color:rgb(204, 13, 13) ;
+        font-weight: bolder;
+    }
+
+}
