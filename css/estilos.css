@@ -8,31 +8,35 @@ body{
 
 /* Estilos de Navegador */
 
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.navbar-toggler {
+    background-color: #cc0d0d;
+}
+
+.navbar{
     background-color: #232222f5;
-    padding-top: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-nav ul{
-    list-style: none;
-    padding: 5px 0;
-    text-align: center;
-    margin: 10px;
+.nav-img{
+    border-radius: 15px;
 }
 
-nav ul li{
-    padding: 5px;
+.me-auto{
+    margin-right: 0 !important;
+    margin-left: auto;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: rgb(204, 13, 13);
+.nav-item{
+    margin: 5px;
+}
+
+.nav-link{
+    color: #cc0d0d;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     transition-timing-function: ease-in-out;
 }
 
@@ -294,28 +298,7 @@ footer ul li{
     /* En Navegador */
 
     body{
-        padding-top: 115px;
-    }
-
-    nav{
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: center;
-        padding: 15px;
-        position: fixed;
-        width: 98%;
-        top: 0;
-        left: 0;
-    }
-
-    nav ul{
-        padding: 15px ;
-        margin: 0;
-        }
-
-    nav ul li{
-        display: inline-block;
-        padding: 10px;
+        padding-top: 145px;
     }
 
     /* En pagina carta - Main */
@@ -349,13 +332,17 @@ footer ul li{
     /* En nav */
 
     nav ul li:hover{
-        transform: scale(1.2);
+        /* transform: scale(1.2); */
         transition-duration: 0.5s;
         text-decoration: underline;
         border-style: solid;
         border-width: 1.5px;
         border-radius: 3px;
-        border-color: rgb(204, 13, 13)
+        border-color: #cc0d0d;
+    }
+
+    .nav-link:hover{
+        color: #cc0d0d;
     }
 
 
